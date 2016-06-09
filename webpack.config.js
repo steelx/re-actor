@@ -37,7 +37,7 @@ const common = {
                 exclude: /node_modules/
             },
             {
-                test: /\.scss$/,
+                test: /\.(scss|sass)$/,
                 loader: ExtractTextPlugin.extract('style', ['css', 'postcss', 'sass'])
             },
             {
