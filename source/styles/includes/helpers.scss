@@ -1,0 +1,28 @@
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  font-weight: $fw-normal;
+  color: $c-text;
+  background: $c-background;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  @include clearfix();
+}
+
+@include medium() {
+  .container {
+    max-width: $ct-medium;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include large() {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

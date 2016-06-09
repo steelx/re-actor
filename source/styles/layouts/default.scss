@@ -1,0 +1,15 @@
+.default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100vh;
+  background: url('../images/bg-welcome.jpg') no-repeat center center;
+  background-size: cover;
+
+
+  img {
+    max-width: 220px;
+    height: auto;
+  }
+}
