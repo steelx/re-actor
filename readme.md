@@ -18,4 +18,3 @@
  - `npm start`
  - `npm run build`
  - `npm run preview`
- - always serving @ [https://localhost:8080](https://localhost:8080)
