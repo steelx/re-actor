@@ -1,6 +1,9 @@
 // Core
 import React from 'react';
 
+// Containers
+import Dude from '../containers/Dude';
+
 // Assets
 import img from '../images/img-profile.png';
 
@@ -8,7 +11,10 @@ import img from '../images/img-profile.png';
 class Home extends React.Component {
     render() {
         return (
-            <img src={img} />  
+            <div className="center">
+                <img src={img} />
+                <Dude />
+            </div>
         );
     }
 }

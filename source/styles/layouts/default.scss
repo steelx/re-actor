@@ -7,9 +7,21 @@
   background: url('../images/bg-welcome.jpg') no-repeat center center;
   background-size: cover;
 
+  .center {
+    width: 50%;
+    text-align: center;
 
-  img {
-    max-width: 220px;
-    height: auto;
+    img {
+      max-width: 220px;
+      height: auto;
+    }
+
+    input {
+      width: 24px;
+      margin: 0;
+      background: transparent;
+      border: 0;
+      outline: 0;
+    }
   }
 }

@@ -10,7 +10,7 @@ exports.after = function (args) {
 
             compress: true,
 
-            hot: true,
+            hot: false,
             inline: true,
             host: args.host, // Defaults to `localhost`
             port: args.port, // Defaults to 8080

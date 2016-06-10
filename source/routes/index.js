@@ -15,6 +15,7 @@ import NotFound from './NotFound';
 let Routes = (
     <Route path="/" component={Default}>
         <IndexRoute component={Home}/>
+        <Route path="what" component={Home}/>
         <Route path="*" component={NotFound}/>
     </Route>
 );
