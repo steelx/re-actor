@@ -1,10 +1,12 @@
 # Re-actor
 
-It's a basic boilerplate for `React`. No routes, no flux, no nothing. Just plain React.
-
-Webpack to do stuff there. Has `babel` watching everything and `sass|scss` support.
-
-Properly builds stuff over `build`.
+ - react
+ - react-dom
+ - react-redux
+ - react-router
+ - react-router-redux
+ - redux
+ - redux-thunk
 
 ### Tree
 ```shell
@@ -15,17 +17,28 @@ Properly builds stuff over `build`.
 │   ├── /scripts/               # js
 │   ├── /styles/                # css
 │   └── ...                     # index.html, favicon.ico, ...
-├── /config/                    # webpack/server config
-│   ├── cert.pem                # for https
-│   ├── dev.config.js           # development config for webpack
-│   ├── key.pem                 # for https
-│   └── prod.config.js          # production config for webpack
+├── /config/                    # webpack config
+│   ├── dev.config.js           # development config
+│   └── prod.config.js          # production config
 ├── /node_modules/              # stuff from npm
+├── /server/                    # preview server
+│   ├── cert.pem                # for https
+│   ├── index.js                # server entry
+│   └── key.pem                 # for https
 ├── /source/                    # stuff to work on
-│   ├── /components/            # react components
+│   ├── /actions/               # redux actions
+│   ├── /components/            # dumb components
+│   ├── /containers/            # smart components
 │   ├── /images/                # images to be required in css/html/js
 │   ├── /layouts/               # react component that will wrap the application
+│   ├── /reducers/              # redux reducers
+│   ├── /routes/                # routes and views
+│       ├── index.js            # lists of routes
+│       └── ...                 # components as views
 │   ├── /static/                # static files that won't be touched by webpack, they will be thrown to ./build
+│   ├── /store/                 # redux store
+│       ├── createStore.js      # creates the store
+│       └── initialState.js     # initial application state
 │   ├── /styles/                # styles, css, scss, sass
 │   ├── index.html              # template for index.html, calls to css and js files will be injected there
 │   └── main.js                 # application entry
@@ -40,11 +53,11 @@ Properly builds stuff over `build`.
  - `npm i -g bower`
 
 ### Development
- - clone me
+ - `git clone -b with-redux https://github.com/dallrigo/re-actor.git`
+ - `cd re-actor`
  - `npm install`
 
 ### Scripts
  - `npm start`
  - `npm run build`
  - `npm run preview`
- - always serving @ [http://localhost:8080](http://localhost:8080)
