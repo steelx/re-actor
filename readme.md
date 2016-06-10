@@ -11,7 +11,7 @@
  - `npm i -g bower`
 
 ### Development
- - clone me
+ - `git clone -b <branch> <this_repo>`
  - `npm install`
 
 ### Scripts
