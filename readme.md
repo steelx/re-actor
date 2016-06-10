@@ -8,6 +8,15 @@
  - redux
  - redux-thunk
 
+### The bundle
+ - `es5` everywhere, don't worry
+ - `sass|scss` support
+ - `autoprefixer`
+ - `bootstrap-sass`
+ - `dev server` with hot reloading
+ - `http|https` build preview
+ - [build] `minifide|hashed`
+
 ### Tree
 ```shell
 .
