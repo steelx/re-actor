@@ -15,7 +15,7 @@
  - `bootstrap-sass`
  - `dev server` with hot reloading
  - `http|https` build preview
- - [build] `minifide|hashed`
+ - [build] `minified|hashed`
 
 ### Tree
 ```shell
