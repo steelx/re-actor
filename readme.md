@@ -47,4 +47,4 @@ Properly builds stuff over `build`.
  - `npm start`
  - `npm run build`
  - `npm run preview`
- - always serving @ [https://localhost:8080](https://localhost:8080)
+ - always serving @ [http://localhost:8080](http://localhost:8080)

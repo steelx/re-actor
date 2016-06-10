@@ -15,6 +15,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const dev = require('./config/dev.config');
 const prod = require('./config/prod.config');
 
+// Paths
 const PATH = {
     build: path.join(__dirname, 'build'),
     source: path.join(__dirname, 'source')
@@ -95,7 +96,7 @@ switch (process.env.npm_lifecycle_event) {
             dev.after({
                 contentBase: PATH.build,
                 host: process.env.HOST,
-                port: process.env.PORT
+                port: process.env.PORT || 8080
             })
         );
 }

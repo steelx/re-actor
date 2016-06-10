@@ -1,12 +1,15 @@
+// Core
 import React from 'react';
 
-import img from '../images/img-profile.png';
+// Styles
+import '../styles/main.scss';
+
 
 class Default extends React.Component {
     render() {
         return (
             <div className="default">
-                <img src={img} />
+                {this.props.children}
             </div>
         );
     }

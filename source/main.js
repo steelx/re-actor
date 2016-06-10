@@ -2,18 +2,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Components
-import Default from './layouts/Default';
+// Router
+import {Router, browserHistory} from 'react-router';
 
-// Styles
-import './styles/main.scss';
+// Routes
+import Routes from './routes';
 
-
+// Root element
 const ROOT_ELEMENT = document.getElementById('root');
+
 
 let render = () => {
     const App = (
-        <Default />
+        <Router history={browserHistory} children={Routes} />
     );
 
     ReactDOM.render(App, ROOT_ELEMENT);

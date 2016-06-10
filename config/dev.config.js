@@ -12,7 +12,6 @@ exports.after = function (args) {
 
             hot: true,
             inline: true,
-            https: true,
             host: args.host, // Defaults to `localhost`
             port: args.port, // Defaults to 8080
 
